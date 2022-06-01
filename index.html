@@ -3,10 +3,205 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="/ styles/styles.css">
   </head>
   <body>
+    <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
+    <section>
+      <form class="search">
+        <img src="/images/header/search.svg" alt="лупа" width="16" height="16">
+      <input type="text" name="search" placeholder="Текст поиска">
+      <button type="submit" class="search-button">Найти</button>
+    </form>
+    </section>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-user">
+          <li class="navigation-item-user">
+            <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
+            <a href="#" class="navigation-link-enter">
+              <span class="visually-hidden">
+                Войти
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item-user">
+            <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
+            <a href="#" class="navigation-link-compare">
+              <span class="visually-hidden">
+              Сравнить
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item-user">
+            <img src="/images/header/2.png" alt="2" width="21" height="21">
+            <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
+            <a href="#" class="navigation-link-bin">
+              <span class="visually-hidden">
+              Корзина
+              </span>
+            </a>
+          </li>
+        </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link-catalog">
+              каталог товаров
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link-delivery">
+              доставка
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link-warranty">
+              гарантия
+            </a>
+          </li>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link-contacts">
+            контакты
+          </a>
+        </li>
+        </ul>
+        <span class="text-01">01</span>
+      </nav>
+    </header>
+    
+    <main class="main-index">
+      <img src="/images/main/foto quadcopt.png" class="quadcopt" alt="Фотография квадрокоптера" width="560" height="560">
+      <section class="main-description">
+          <h1 class="visually-hidden">Порхает как бабочка,<br>жалит как пчела!</h1>
+          <p class="main-description">Этот обычный, на первый взгляд, квадрокоптер
+          оснащен мощным лазером, замаскированным под стандартную камеру.
+           </p>
+        </section>
+      <a href="#" class="main-more">подробнее</a>
+        <span class="advantage-far">
+          <b>800 м</b>
+        </span>
+        <span class="advantage-far-description">Дальность полета</span>
+        <span class="advantage-radius">
+          <b>50 м</b>
+        </span>
+        <span class="advantage-radius-description">Радиус поражения</span>
+      <ul class="main-products-vr">
+        <li>
+          <img src="/images/main/glasses.svg" class="VR" alt="Изображение VR очков"
+          width="97" height="55">
+            <h2 class="vr">Виртуальная реальность</h2>
+        </li>
+        <li>
+          <img src="/images/main/selfie stick .svg" class="selfie" alt="Изображение selfie палки"
+          width="86" height="117">
+            <h2 class="selfie">Моноподы для селфи</h2>
+        </li>
+        <li>
+          <img src="/images/main/camera.svg" class="cameras" alt="Изображение action камеры"
+          width="71" height="87">
+            <h2 class="cameras">Экшн-камеры</h2>
+        </li>
+          <img src="/images/main/wristband.svg" class="fitness-wristband" alt="Изображение fitness браслета"
+          width="107" height="65">
+            <h2 class="fitness-wristband">Фитнес-браслеты</h2>
+        </li>
+        <li>  
+          <img src="/images/main/watch.svg" class="smart-watch" alt="Изображение умных часов"
+          width="56" height="98">
+            <h2 class="smart-watch">Умные часы</h2>
+        </li>
+        <li>
+          <img src="/images/main/quadcopt.svg" class="copter" alt="Изображение квадрокоптера"
+          width="132" height="69">
+            <h2 class="copter">Квадрокоптеры</h2>
+        </li>
+      </ul>
 
+      <section class="delivery-warranty-credit">
+        <ul class="d-w-c-list">
+          <li class="delivery-item">
+            доставка
+          </li>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно беспатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <li class="warranty-item">гарантия</li>
+          <li class="credit-item">кредит</li>
+        </ul>
+        <img src="/images/main/delivery man.svg" class="delivery-man" alt="Изображение доставщика"
+        width="136" height="164">
+      </section>
+
+      <section class="delivery-only">
+        <img src="/images/main/car.svg" class="delivery-car" alt="Иконка машины"
+        width="47" height="31">
+        <p class="delivery-only-text">доставим редкий товар под заказ</p>
+        <button type="button">
+          <img src="/images/main/point.svg" class="delivery-only-icon" alt="перевернутый знак"
+          width="2" height="12"></button>
+      </section>
+
+      <section class="about">
+        <h3>О нас</h3>
+        <p class="about-us">Огромный выбор гаджетов не оставит равнодушным
+        гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные уголки России транспортными компаниями:</p>
+        <ol class="about-comp">
+          <li class="copm1">Меловые линии</li>
+          <li class="comp2">СДИК</li>
+          <li class="comp3">ТоксБерри</li>
+        </ol>
+        <a class="about-more" href="#">подробнее о нас</a>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <h3>Контакты</h3>
+        <p class="contacts">Вы можете забрать товар сами, заезав в наш офис.
+        Заодно сможете проверить работоспособность покупки.</p>
+        <h4>Интернет-магазин "Девайс"</h4>
+        <address><p class="adress">Санкт-Петербург,набережная реки Карповки, 5, литера П</p>
+          <a class="tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <ul class="time">
+          <li>пн-пт: с 10:00 до 22:00</li>
+          <li>сб-вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="write-to-us" href="#">напишите нам</a>
+      </section>
+
+      <section class="mailing">
+        <p class="subscription"><h2>Подпишитесь на рассылку</h2>Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции,
+        спецпредложения и вот это всё.</p>
+      <form class="email" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="email">
+          <input type="email" name="email-date" placeholder="Ваш e-mail">
+        </label>
+        <button type="submit">подписаться</button>
+        <img src="/images/main/green mark.svg" alt="галочка" width="14" height="14">
+        <span>Это бесплатно</span>
+      </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="144.9" height="36">
+      <adress>Санкт-Петербург,набережная 
+               реки Карповки, 5, литера П
+      </adress>
+      <a href="#" class="delivery">доставка</a>
+      <a href="#" class="warranty"> гарантия</a>
+      <a href="#contacts" class="contacts">контакты</a>
+      <a class="tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="academy-logo" href="https://htmlacademy.ru/">
+        <img src="/images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
+        <img src="/images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
+        <img src="/images/footer/twit.svg" alt="твиттер" width="15" height="14.06">
+      <img src="/images/footer/academy logo.png" alt="Логотип Академии" width="114.9" height="32.9"></a>
+    </footer>
   </body>
 </html>
