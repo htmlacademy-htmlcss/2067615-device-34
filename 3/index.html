@@ -7,91 +7,93 @@
     <base href="https://htmlacademy-htmlcss.github.io/2067615-device-34/3/">
 </head>
   <body>
-    <div class="header-content">
       <header class="page-header">
         <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
-        <section>
+        <div class="header">
+          <section class="navigation">
           <form class="search">
             <img src="/images/header/search.svg" alt="лупа" width="16" height="16">
-            <input type="text" name="search" placeholder="Текст поиска">
+            <input type="text" name="search" class="search" placeholder="Текст поиска">
             <button type="submit" class="search-button">Найти</button>
-          </form>
-        </section>
+            </form>
+          </section>
     
-      <nav class="icons">
-        <ul class="navigation-user">
-          <li class="icons item-user">
-            <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
-            <a href="#" class="navigation-link-enter">
-              <span class="icons visually-hidden">
-                Войти
-              </span>
-            </a>
-          </li>
-          <li class="icons item-user">
-            <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
-            <a href="#" class="navigation-link-compare">
-              <span class="icons visually-hidden">
-              Сравнить
-              </span>
-            </a>
-          </li>
-          <li class="icons item-user">
-            <span class="icons number">2</span>
-            <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
-            <a href="#" class="navigation-link-bin">
-              <span class="icons visually-hidden">
-              Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
+          <nav class="icons">
+            <ul class="navigation-user">
+              <li class="icons item-user">
+                <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
+                <a href="#" class="navigation-link-enter">
+                  <span class="icons visually-hidden">
+                    Войти
+                  </span>
+                </a>
+             </li>
+              <li class="icons item-user">
+                <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
+                <a href="#" class="navigation-link-compare">
+                  <span class="icons visually-hidden">
+                  Сравнить
+                  </span>
+                </a>
+              </li>
+              <li class="icons item-user">
+                <span class="icons number">2</span>
+                <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
+                <a href="#" class="navigation-link-bin">
+                  <span class="icons visually-hidden">
+                  Корзина
+                  </span>
+                </a>
+              </li>
+           </ul>
         
-        <ul class="navigation navigation-list">
-          <li class="navigation navigation-item">
-            <a href="catalog.html" class="link catalog">
-              каталог товаров
-            </a>
-          </li>
-          <li class="navigation navigation-item">
-            <a href="#" class="link delivery">
-              доставка
-            </a>
-          </li>
-          <li class="navigation navigation-item">
-            <a href="#" class="link warranty">
-              гарантия
-            </a>
-          </li>
-        </li>
-        <li class="navigation navigation-item">
-          <a href="#" class="link contacts">
-            контакты
-          </a>
-        </li>
-        </ul>
-        <span class="text01">01</span>
-      </nav>
-    </header></div>
+            <ul class="navigation navigation-list">
+              <li class="navigation navigation-item">
+                <a href="catalog.html" class="link catalog-main">
+                 каталог товаров
+                </a>
+              </li>
+              <li class="navigation navigation-item">
+                <a href="#" class="link delivery-main">
+                  доставка
+                </a>
+              </li>
+              <li class="navigation navigation-item">
+                <a href="#" class="link warranty-main">
+                  гарантия
+                </a>
+              </li>
+            </li>
+            <li class="navigation navigation-item">
+              <a href="#" class="link contacts-main">
+                контакты
+              </a>
+            </li>
+            </ul>
+            <span class="text-white-number-01">01</span>
+          </nav>
+        </div>
     
-    <main class="main-index">
-      <img src="/images/main/foto quadcopt.png" class="quadcopt" alt="Фотография квадрокоптера" width="560" height="560">
-      <section class="main-description">
-          <h1 class=" main visually-hidden">Порхает как бабочка,<br>жалит как пчела!</h1>
+      <div class="quadcopt"><img src="/images/main/foto quadcopt.png" class="quadcopt" alt="Фотография квадрокоптера" width="560" height="560"></div>
+        <section class="main-description">
+      <h1 class="main visually-hidden">Порхает как бабочка,<br>жалит как пчела!</h1>
           <p class="description">Этот обычный, на первый взгляд, квадрокоптер
-          оснащен <br> мощным лазером, замаскированным под стандартную камеру.
+            оснащен <br> мощным лазером, замаскированным под стандартную камеру.
            </p>
         </section>
-      <button type="button" class="button">подробнее</button>
-        <span class="advantage">
+      <button type="button" class="button-main">подробнее</button>
+        <div class="description"><span class="description-800m">
           <b>800 м</b>
         </span>
-        <span class="description">Дальность полета</span>
-        <span class="advantage">
+        <span class="description">Дальность полета</span></div>
+        <div class="advantage"><span class="advantage-50m">
           <b>50 м</b>
         </span>
-        <span class="description">Радиус поражения</span>
-      <ul class="products">
+        <span class="advantage">Радиус поражения</span></div>
+      </header>
+      
+      <main class="main-container main-index">
+        <ul class="products">
         <li class="content">
            <div class="content"> <a href="#" class="products-link"> <img src="/images/main/glasses.svg" class="VR" alt="Изображение VR очков"
           width="97" height="55"></a></div>
@@ -123,6 +125,7 @@
             <h2 class="products copter">Квадрокоптеры</h2>
         </li>
       </ul>
+    </div>
 
       <div class="delivery-warranty-credit"><section class="delivery-warranty-credit">
         <ul class="d-w-c-list">
@@ -160,7 +163,7 @@
           <li class="comp">СДИК</li>
           <li class="comp">ТоксБерри</li>
         </ol>
-        <a href="#" class="atribute">подробнее о нас</a>
+        <a href="#" class="link">подробнее о нас</a>
       </section>
 
       <section class="contacts" id="contacts">
@@ -176,7 +179,7 @@
           <li class="comp">пн-пт: с 10:00 до 22:00</li>
           <li class="comp">сб-вс: с 10:00 до 19:00</li>
         </ul>
-        <a href="#" class="atribute">напишите нам</a>
+        <a href="#" class="link">напишите нам</a>
       </section>
 
       <section class="mailing">
@@ -199,10 +202,10 @@
       <address class="description">Санкт-Петербург,набережная 
                реки Карповки, 5, литера П
       </address>
-      <a href="#" class="footer delivery">доставка</a>
-      <a href="#" class="footer warranty"> гарантия</a>
-      <a href="#contacts" class="footer contacts">контакты</a>
-      <a class="tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <a href="#" class="link delivery">доставка</a>
+      <a href="#" class="link warranty"> гарантия</a>
+      <a href="#contacts" class="link contacts">контакты</a>
+      <a class="tel white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="academy-logo" href="https://htmlacademy.ru/">
         <img src="/images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
         <img src="/images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
