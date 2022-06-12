@@ -7,74 +7,72 @@
     <base href="https://htmlacademy-htmlcss.github.io/2067615-device-34/3/">
 </head>
   <body>
-    <div class="header-content">
-      <header class="page-header">
-        <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
-        <section>
-          <form class="search">
-            <img src="/images/header/search.svg" alt="лупа" width="16" height="16">
-            <input type="text" name="search" placeholder="Текст поиска">
-            <button type="submit" class="search-button">Найти</button>
+    <header class="page-header">
+      <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
+      <div class="header">
+        <section class="navigation">
+        <form class="search">
+          <img src="/images/header/search.svg" alt="лупа" width="16" height="16">
+          <input type="text" name="search" class="search" placeholder="Текст поиска">
+          <button type="submit" class="search-button">Найти</button>
           </form>
         </section>
-    
-      <nav class="icons">
-        <ul class="navigation-user">
-          <li class="icons item-user">
-            <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
-            <a href="#" class="navigation-link-enter">
-              <span class="icons visually-hidden">
-                Войти
-              </span>
-            </a>
-          </li>
-          <li class="icons item-user">
-            <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
-            <a href="#" class="navigation-link-compare">
-              <span class="icons visually-hidden">
-              Сравнить
-              </span>
-            </a>
-          </li>
-          <li class="icons item-user">
-            <span class="icons number">2</span>
-            <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
-            <a href="#" class="navigation-link-bin">
-              <span class="icons visually-hidden">
-              Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
-        
-        <ul class="navigation navigation-list">
-          <li class="navigation navigation-item">
-            <a href="catalog.html" class="link catalog-main">
-              каталог товаров
-            </a>
-          </li>
-          <li class="navigation navigation-item">
-            <a href="#" class="link delivery-main">
-              доставка
-            </a>
-          </li>
-          <li class="navigation navigation-item">
-            <a href="#" class="link warranty-main">
-              гарантия
-            </a>
-          </li>
-        </li>
-        <li class="navigation navigation-item">
-          <a href="#" class="link contacts-main">
-            контакты
-          </a>
-        </li>
-        </ul>
-        <span class="text-white-number-01">01</span>
-      </nav>
-    </header></div>
 
-    <main class="inner">
+        <nav class="icons">
+          <ul class="navigation-user">
+            <li class="icons item-user">
+              <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
+              <a href="#" class="navigation-link-enter">
+                <span class="icons visually-hidden">
+                  Войти
+                </span>
+              </a>
+           </li>
+            <li class="icons item-user">
+              <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
+              <a href="#" class="navigation-link-compare">
+                <span class="icons visually-hidden">
+                Сравнить
+                </span>
+              </a>
+            </li>
+            <li class="icons item-user">
+              <span class="icons number">2</span>
+              <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
+              <a href="#" class="navigation-link-bin">
+                <span class="icons visually-hidden">
+                Корзина
+                </span>
+              </a>
+            </li>
+         </ul>
+
+          <ul class="navigation navigation-list">
+            <li class="navigation navigation-item">
+              <a href="catalog.html" class="link catalog-main">
+               каталог товаров
+              </a>
+            </li>
+            <li class="navigation navigation-item">
+              <a href="#" class="link delivery-main">
+                доставка
+              </a>
+            </li>
+            <li class="navigation navigation-item">
+              <a href="#" class="link warranty-main">
+                гарантия
+              </a>
+            </li>
+          </li>
+          <li class="navigation navigation-item">
+            <a href="#" class="link contacts-main">
+              контакты
+            </a>
+          </li>
+          </ul>
+          <span class="text-white-number-01">01</span>
+        </nav>
+      </div>
         <header class="inner-header">
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
@@ -86,9 +84,11 @@
             </li>
             <li class="description breadcrumbs-detail">
               <a class="description breadcrumbs-detail-mono">Моноподы для селфи</a>
-            </li>            
+            </li>
           </ul>
         </header>
+      </header>
+      <main class="inner">
         <section class="catalog-products">
             <h2 class="navigation filter">фильтр:</h2>
             <h2 class="navigation sort">сортировка:</h2>
@@ -103,41 +103,41 @@
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
                 <label for="price"><span class="comp">Стоимость</span>
-                  <input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000"> 
+                  <input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
                 </label>
             </fieldset>
-            
+
             <fieldset class="catalog-filter-color">
               <legend class="comp catalog-filter-price">Цвет</legend>
               <ul class="catalog-filter-color-list">
-                <li class="catalog-filter-item">         
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="Black" checked>Черный
                   </label>
                 </li>
-                <li class="catalog-filter-item">         
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="White" checked>Белый
                   </label>
                 </li>
-                <li class="catalog-filter-item">         
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class=" control-input" type="checkbox" name="Blue">Синий
                   </label>
                 </li>
-                <li class="catalog-filter-item">         
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="description-color control-input" type="checkbox" name="Red">Красный
                   </label>
                 </li>
-                <li class="catalog-filter-item">         
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="description-color control-input" type="checkbox" name="Pink">Розовый
                   </label>
                 </li>
               </ul>
             </fieldset>
-           
+
             <fieldset class="catalog-filter-bluetooth">
               <legend class="comp catalog-filter-bluetooth">Bluetooth</legend>
                 <ul class="catalpg-filter-list">
@@ -158,6 +158,7 @@
             <a href="#" class="atribute">показать</a>
       </form>
 
+      <div class="catalog">
       <section class="catalog products">
         <ul class="catalog-products-list">
           <li class="catalog-products-item">
@@ -220,11 +221,12 @@
             </li>
           </ul>
       </section>
+      </div>
     </main>
 
     <footer class="page-footer">
       <img src="/images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
-      <address class="description">Санкт-Петербург,набережная 
+      <address class="description">Санкт-Петербург,набережная
                реки Карповки, 5, литера П
       </address>
       <a href="#" class="link delivery">доставка</a>
@@ -238,4 +240,4 @@
       <img src="/images/footer/academy logo.png" alt="Логотип Академии" width="114.9" height="32.9"></a>
     </footer>
   </body>
-</html> 
+</html>

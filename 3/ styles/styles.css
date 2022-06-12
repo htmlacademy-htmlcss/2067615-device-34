@@ -1,7 +1,7 @@
 @font-face {
   font-family:  "Raleway";
   font-style: normal;
-  font weight:  800;
+  font-weight:  800;
   src: url("fonts/raleway/raleway-800.woff2") format("woff2");
   font-display:swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family:  "Rubik";
     font-style: normal;
-    font weight:  400;
+    font-weight: 400;
     src: url("fonts/rubik/rubik-400.woff2") format("woff2");
     font-display:swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family:  "Raleway";
     font-style: normal;
-    font weight:  700;
+    font-weight: 700;
     src: url("fonts/rubik/rubik-700") format("woff2");
     font-display:swap;
 }
@@ -32,13 +32,13 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
+    color: #000;
     background-color: white;
 }
 .main-container{
     flex-grow:1;
 }
-button.button-main {
+.button-main {
     display: inline;
     width: 210px;
     height: 20px;
@@ -56,7 +56,7 @@ button.button-main {
     cursor: pointer;
     color: #000000;
 }
-button.search-button {
+.search-button {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -70,7 +70,6 @@ header.page-header {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    align-items: flex-start;
     width: 1440px;
     min-height: 750px;
     background-color:#FFFFFF;
@@ -81,48 +80,19 @@ div.header{
     background-color: #FFE17F;
     width: 1160px;
     min-height: 300px;
-    margin-top: 40px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin:0 auto;
 }
 div.quadcopt{
     display: inline-block;
     width: 560px;
     min-height: 560px;
-    margin-top: -150px;
-    margin-left: 140px;
-    
-}
-h1.main{
-    display: block;
-    width: 700px;
-    min-height: 100px;
-    margin-left: 740px;
-    margin-top: -450px;
-    
-}
-p.description{
-    display: block;
-    width: 560px;
-    min-height: 60px;
-    margin-left: 740px;
-}
-div.description{
-    display: block;
-    width: 140px;
-    margin-left: 740px;
-    margin-top: 40px;
-}
-div.advantage{
-    display: block;
-    width: 140px;
-    margin-left: 900px;
-    margin-top: -92px;
 }
 ul.products{
-    display: block;
-    margin: 0 auto;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1160px;
+    margin:0 auto;
 }
 .link {
     font-family: "Raleway", "Arial", sans-serif;
@@ -159,10 +129,7 @@ h2.navigation {
     font-size: 14px;
     line-height: 17px;
 }
-header a {
-    text-decoration: none;
-}
-main a {
+a {
     text-decoration: none;
 }
 a.pagination-link {
@@ -215,10 +182,16 @@ a.description {
 }
 div.content {
     background-color: #FFE17F;
-   width: 160px;
-   height: 160px;
+    width: 160px;
+    height: 160px;
 }
 div.delivery-warranty-credit{
+    display:flex;
+    width: 1440px;
+    min-height: 391px;
+    margin: 0 auto;
+}
+section.delivery-warranty-credit{
     background-color: #F0F0F0;
     width: 1440px;
     height: 289px;
@@ -240,9 +213,18 @@ div.delivery-warranty-credit{
     line-height: 23px;
 }
 div.delivery-only {
+    display: flex;
+    width: 1160px;
+    min-height: 140px;
+    margin: 0 auto;
     background-color: #F0F0F0;
     width: 1160px;
     height: 100px;
+}
+div.about{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
 }
 .comp {
     font-family: 'Rubik', sans-serif;
@@ -272,12 +254,18 @@ a.download {
     line-height: 19px;
 }
 .mailing {
+    display: flex;
+    margin: 0 auto;
+    width: 1440px;
     background-color: #F0F0F0;
 }
 footer {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
     background-color: #444444;
 }
-a.tel {
+.tel {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -286,7 +274,7 @@ a.tel {
     color: #000000;
     font-style: normal;
 }
-a.tel.white{
+.tel.white{
     color: #F0F0F0;
 }
 address.description{
@@ -298,8 +286,19 @@ address.description{
     color: #F0F0F0;
 }
 .inner {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 1440px;
+    min-height: 1428px;
     background-color: #F0F0F0;
 }
-section.catalog {
+div.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 840px;
+    min-height: 1310px;
     background-color: #FFFFFF;
 }
