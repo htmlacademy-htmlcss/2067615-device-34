@@ -21,9 +21,11 @@
     src: url("fonts/rubik/rubik-700") format("woff2");
     font-display:swap;
 }
+
 html {
     height: 100%;
 }
+
 body {
     display: flex;
     margin: 0;
@@ -35,15 +37,15 @@ body {
     color: #000;
     background-color: white;
 }
+
 .main-container{
     flex-grow:1;
 }
+
 .button-main {
     display: inline;
     width: 210px;
     height: 20px;
-    margin-left: 745px;
-    margin-top: -190px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -54,8 +56,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    color: #000000;
+    color: #000;
 }
+
 .search-button {
     font-family: 'Rubik';
     font-style: normal;
@@ -66,6 +69,7 @@ body {
     cursor: pointer;
     color: #000000;
 }
+
 header.page-header {
     display: flex;
     margin: 0 auto;
@@ -74,19 +78,28 @@ header.page-header {
     min-height: 750px;
     background-color:#FFFFFF;
 }
-div.header{
+
+.navigation-box {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.header{
+    display: flex;
     background-color: #FFE17F;
     width: 1160px;
     min-height: 300px;
     margin:0 auto;
 }
+
 div.quadcopt{
     display: inline-block;
     width: 560px;
     min-height: 560px;
 }
+
 ul.products{
     display: flex;
     flex-direction: row;
@@ -94,6 +107,7 @@ ul.products{
     width: 1160px;
     margin:0 auto;
 }
+
 .link {
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 800;
@@ -103,35 +117,46 @@ ul.products{
     color: #000000;
     text-transform: uppercase;
 }
+
 .link.delivery,
 .link.warranty,
 .link.contacts {
     color: #F0F0F0;
 }
+
 .text-white-number-01 {
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
     color: #FFFFFF;
 }
+
 h2.navigation {
     font-size: 16px;
     line-height: 19px;
 }
+
 .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
 }
+
 .icons.number {
     font-size: 14px;
     line-height: 17px;
 }
+
 a {
     text-decoration: none;
 }
+
 a.pagination-link {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -139,21 +164,25 @@ a.pagination-link {
     line-height: 20px;
     color: #000000;
 }
+
 li {
     list-style-type: none;
 }
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px
 }
+
 .description,
 .advantage {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     line-height: 30px;
 }
+
 .description-800m,
 .advantage-50m {
     font-family: 'Rubik', sans-serif;
@@ -161,41 +190,49 @@ h1 {
     font-size: 36px;
     line-height: 30px;
 }
+
 address.description {
     font-size: 16px;
 }
+
 a.description {
     font-size: 16px;
     line-height: 19px;
 }
+
 .more {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
 }
+
 .products {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
 }
+
 div.content {
     background-color: #FFE17F;
     width: 160px;
     height: 160px;
 }
-div.delivery-warranty-credit{
+
+.delivery-warranty-credit{
     display:flex;
     width: 1440px;
     min-height: 391px;
     margin: 0 auto;
 }
+
 section.delivery-warranty-credit{
     background-color: #F0F0F0;
     width: 1440px;
     height: 289px;
 }
+
 .item {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -203,68 +240,80 @@ section.delivery-warranty-credit{
     line-height: 21px;
     color: #000000;
 }
+
 .delivery.text {
     color: #FFE17F;
 }
+
 .only {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 23px;
 }
+
 div.delivery-only {
     display: flex;
     width: 1160px;
     min-height: 140px;
     margin: 0 auto;
     background-color: #F0F0F0;
-    width: 1160px;
     height: 100px;
 }
+
 div.about{
     display: flex;
     width: 1440px;
     margin: 0 auto;
 }
+
 .comp {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
+
 li.comp {
     font-size: 18px;
 }
+
 span.comp {
     font-size: 18px;
     line-height: 20px;
 }
+
 legend.comp {
     font-size: 18px;
     line-height: 20px;
 }
+
 h3.comp {
     font-size: 18px;
     line-height: 20px;
 }
-a.download {
+
+.download {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
 }
+
 .mailing {
     display: flex;
     margin: 0 auto;
     width: 1440px;
     background-color: #F0F0F0;
 }
+
 footer {
     display: flex;
     width: 1440px;
     margin: 0 auto;
     background-color: #444444;
 }
+
 .tel {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -274,9 +323,11 @@ footer {
     color: #000000;
     font-style: normal;
 }
+
 .tel.white{
     color: #F0F0F0;
 }
+
 address.description{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -285,20 +336,69 @@ address.description{
     line-height: 20px;
     color: #F0F0F0;
 }
+
 .inner {
     display: flex;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     width: 1440px;
     min-height: 1428px;
     background-color: #F0F0F0;
 }
-div.catalog {
+
+.catalog {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 840px;
-    min-height: 1310px;
     background-color: #FFFFFF;
 }
+
+.sort-population {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 840px;
+    background-color: #F0F0F0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 1316px;
+}
+
+.box-selfie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 760px;
+    margin: 0 auto;
+}
+
+.box-stick-foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 760px;
+    margin: 0 auto;
+}
+
+.download-button {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 760px;
+}
+
+.pagination {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 760px;
+}
+

@@ -89,7 +89,7 @@
       </header>
       <main class="inner">
         <section class="catalog-products">
-            <h2 class="navigation filter">фильтр:</h2>
+          <div class="sort-population">
             <h2 class="navigation sort">сортировка:</h2>
             <select name="sort">
                 <option value="popular">Популярные</option>
@@ -98,14 +98,16 @@
               </button>
               <button type="button"><img src="/images/catalog/down.svg" alt="стрелка вниз" width="11" height="10">
               </button>
+          </div>
         </section>
+        <div class="filter">
+          <h2 class="navigation filter">фильтр:</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
                 <label for="price"><span class="comp">Стоимость</span>
                   <input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
                 </label>
             </fieldset>
-
             <fieldset class="catalog-filter-color">
               <legend class="comp catalog-filter-price">Цвет</legend>
               <ul class="catalog-filter-color-list">
@@ -156,10 +158,12 @@
             </fieldset>
             <a href="#" class="atribute">показать</a>
       </form>
+          </div>
 
       <div class="catalog">
       <section class="catalog products">
         <ul class="catalog-products-list">
+          <div class="box-selfie">
           <li class="catalog-products-item">
             <img src="/images/catalog/selfie-stick.jpg" alt="Палка для селфи" width="360" height="380">
             <h3 class="comp">Любительская
@@ -174,6 +178,8 @@
             </h3>
             <span>1 500 р</span>
           </li>
+          </div>
+          <div class="box-stick-foto">
           <li class="catalog-products-item">
             <img src="/images/catalog/water-r-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
             <h3 class="comp">Непотопляемая
@@ -187,11 +193,15 @@
             </h3>
             <span>1 500 р</span>
           </li>
+          </div>
         </ul>
+        <div class="download-button">
         <button type="button" class="button">загрузить ещё</button>
+        </div>
       </section>
 
       <section class="pagination">
+        <div class="pagination">
           <ul class="pagination">
             <li class="pagination-item">
                <a class="pagination-link pagination-prev pagination-disabled">
@@ -219,6 +229,7 @@
               </a>
             </li>
           </ul>
+        </div>
       </section>
       </div>
     </main>
