@@ -71,7 +71,6 @@ body {
 }
 
 header.page-header {
-    display: flex;
     margin: 0 auto;
     flex-direction: column;
     width: 1440px;
@@ -81,12 +80,11 @@ header.page-header {
 
 .navigation-box {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-div.header{
+.header{
     display: flex;
     background-color: #FFE17F;
     width: 1160px;
@@ -94,7 +92,7 @@ div.header{
     margin:0 auto;
 }
 
-div.quadcopt{
+.quadcopt{
     display: inline-block;
     width: 560px;
     min-height: 560px;
@@ -102,7 +100,6 @@ div.quadcopt{
 
 ul.products{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 1160px;
     margin:0 auto;
@@ -138,7 +135,6 @@ h2.navigation {
 
 .icons {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     font-family: "Rubik", sans-serif;
@@ -157,7 +153,7 @@ a {
     text-decoration: none;
 }
 
-a.pagination-link {
+.pagination-link {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -221,7 +217,7 @@ div.content {
 }
 
 .delivery-warranty-credit{
-    display:flex;
+    display: flex;
     width: 1440px;
     min-height: 391px;
     margin: 0 auto;
@@ -252,7 +248,7 @@ section.delivery-warranty-credit{
     line-height: 23px;
 }
 
-div.delivery-only {
+.delivery-only {
     display: flex;
     width: 1160px;
     min-height: 140px;
@@ -261,7 +257,7 @@ div.delivery-only {
     height: 100px;
 }
 
-div.about{
+.about{
     display: flex;
     width: 1440px;
     margin: 0 auto;
@@ -279,16 +275,6 @@ li.comp {
 }
 
 span.comp {
-    font-size: 18px;
-    line-height: 20px;
-}
-
-legend.comp {
-    font-size: 18px;
-    line-height: 20px;
-}
-
-h3.comp {
     font-size: 18px;
     line-height: 20px;
 }
@@ -348,7 +334,6 @@ address.description{
 
 .catalog {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -359,13 +344,11 @@ address.description{
 .sort-population {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
     width: 840px;
     background-color: #F0F0F0;
 }
 
 .filter {
-    display: flex;
     flex-direction: column;
     width: 320px;
     height: 1316px;
@@ -373,7 +356,6 @@ address.description{
 
 .box-selfie {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 760px;
     margin: 0 auto;
@@ -381,7 +363,6 @@ address.description{
 
 .box-stick-foto {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 760px;
     margin: 0 auto;
@@ -390,7 +371,6 @@ address.description{
 .download-button {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
     justify-content: center;
     width: 760px;
 }
@@ -398,7 +378,6 @@ address.description{
 .pagination {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
     width: 760px;
 }
 
