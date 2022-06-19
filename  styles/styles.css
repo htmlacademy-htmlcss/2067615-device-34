@@ -35,7 +35,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #000;
-    background-color: white;
+    background-color: #FFF;
 }
 
 .main-container{
@@ -78,31 +78,178 @@ header.page-header {
     background-color:#FFFFFF;
 }
 
-.navigation-box {
-    display: flex;
-    justify-content: flex-start;
+.logo-box {
+    display: block;
+    min-width: 145px;
+    min-height: 36px;
+    padding: 10px;
     align-items: center;
+    justify-content: center;
+    margin-bottom: -35px;
+    margin-left: 200px;
+    margin-top: 20px;
 }
 
-.header{
+.icons {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+
+.icons-navigation-user {
+  display: flex;
+  min-width: 1040px;
+  min-height: 40px;
+}
+
+.search {
+  display: flex;
+  padding: 10px;
+  min-width: 517px;
+  min-height: 40px;
+}
+
+.enter {
+  display: flex;
+  min-width: 231px;
+  min-height: 30px;
+  padding: 10px;
+}
+
+.compare-bin {
+  display: flex;
+  min-width: 240px;
+  min-height: 30px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.icons.number {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.navigation-list {
     display: flex;
+    align-items: center;
+    width: 1080px;
+    min-height: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.navigation-item-catalog {
+    display: flex;
+    min-width: 236px;
+    min-height: 20px;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.navigation-item {
+    display: flex;
+    min-width: 471px;
+    min-height: 21px;
+    padding: 10px;
+    justify-content: space-around;
+    margin-left: 265px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
     background-color: #FFE17F;
     width: 1160px;
     min-height: 300px;
     margin:0 auto;
 }
 
-.quadcopt{
+.quadcopt {
     display: inline-block;
-    width: 560px;
+    min-width: 560px;
     min-height: 560px;
+    align-self: center;
+    margin-top: -170px;
+    margin-left: 120px;
 }
 
-ul.products{
+.description-box {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    min-height: 401px;
+    padding: 10px;
+    margin-top: -480px;
+    margin-left: 700px;
+}
+
+.more {
+    display: block;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.details {
+    display: flex;
+    min-width: 307px;
+    min-height: 72px;
+    padding: 10px;
+}
+
+.description,
+.advantage {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.description-800m,
+.advantage-50m {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.products {
     display: flex;
     justify-content: space-between;
     width: 1160px;
-    margin:0 auto;
+    height: 253px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.products-link {
+    display: block;
+    width: 160px;
+    height: 253px;
+    margin: 0;
+    padding: 0;
+}
+
+.products-box {
+    display: block;
+    background-color: #FFE17F;
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+.vr {
+    margin-left: calc(50% - 96.95px/2 + 0.48px);
+    margin-top: calc(50% - 54.99px/2 + 0.49px);
+}
+
+.content-description {
+    display: flex;
+    width: 160px;
+    height: 60px;
+    margin: 0;
 }
 
 .link {
@@ -115,9 +262,7 @@ ul.products{
     text-transform: uppercase;
 }
 
-.link.delivery,
-.link.warranty,
-.link.contacts {
+.link.footer-box {
     color: #F0F0F0;
 }
 
@@ -128,25 +273,18 @@ ul.products{
     color: #FFFFFF;
 }
 
+.box-01 {
+    display: flex;
+    padding: 10px;
+    min-width: 250px;
+    min-height: 135px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 h2.navigation {
     font-size: 16px;
     line-height: 19px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-}
-
-.icons.number {
-    font-size: 14px;
-    line-height: 17px;
 }
 
 a {
@@ -172,21 +310,6 @@ h1 {
     line-height: 50px
 }
 
-.description,
-.advantage {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.description-800m,
-.advantage-50m {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 30px;
-}
-
 address.description {
     font-size: 16px;
 }
@@ -203,30 +326,68 @@ a.description {
     line-height: 21px;
 }
 
-.products {
+.products-description {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
 }
 
-div.content {
-    background-color: #FFE17F;
-    width: 160px;
-    height: 160px;
-}
-
-.delivery-warranty-credit{
+.delivery-warranty-credit-box {
     display: flex;
     width: 1440px;
     min-height: 391px;
-    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    padding: 0;
 }
 
-section.delivery-warranty-credit{
+.delivery-warranty-credit {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     background-color: #F0F0F0;
     width: 1440px;
     height: 289px;
+}
+
+.delivery-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1160px;
+    min-height: 319px;
+    margin-bottom: 72px;
+}
+
+.delivery-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.delivery {
+    margin-top: 70px;
+    padding: 0;
+    min-width: 448px;
+    min-height: 174px;
+}
+
+.delivery-head {
+    padding: 0;
+    margin: 0;
+}
+
+p.description {
+    padding-top: 30px;
+}
+
+.delivery-man {
+    padding-top: 74px;
 }
 
 .item {
@@ -246,21 +407,46 @@ section.delivery-warranty-credit{
     font-weight: 800;
     font-size: 20px;
     line-height: 23px;
+    letter-spacing: 00.2em;
 }
 
 .delivery-only {
     display: flex;
     width: 1160px;
-    min-height: 140px;
+    min-height: 100px;
     margin: 0 auto;
     background-color: #F0F0F0;
-    height: 100px;
 }
 
-.about{
+.delivery-only-image {
     display: flex;
-    width: 1440px;
+    width: 125px;
+    min-height: 100px;
+    background-color: #FFE17F;
+}
+
+.delivery-car {
+    padding: 35px;
+}
+
+.delivery-only-text {
+    margin: 0;
+    min-width: 910px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.delivery-only-icon {
+    width: 125px;
+    min-height: 100px;
+    justify-content: flex-end;
+}
+
+.about-contacts {
+    display: flex;
+    width: 1160px;
     margin: 0 auto;
+    min-height: 545px;
 }
 
 .comp {
@@ -287,17 +473,68 @@ span.comp {
 }
 
 .mailing {
-    display: flex;
+    display: grid;
     margin: 0 auto;
     width: 1440px;
+    min-height: 421px;
     background-color: #F0F0F0;
 }
 
-footer {
+.describe-subscription {
+    display: flex;
+}
+
+.subscription {
+    margin-left: 200px;
+    width: 560px;
+    min-height: 90px;
+    margin-top: 30px;
+}
+
+.describe {
+    width: 348px;
+    height: 100px;
+    padding: 0;
+    margin-left: 147px;
+    margin-top: 64px;
+}
+
+.page-footer {
     display: flex;
     width: 1440px;
+    min-height: 321px;
     margin: 0 auto;
     background-color: #444444;
+}
+
+.logo-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 62px;
+    margin-left: 140px;
+    width: 234px;
+    min-height: 182px
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.footer-delivery {
+    display: flex;
+    justify-content: space-around;
+    width: 444px;
+    min-height: 22px;
+    color: #FFF;
+}
+
+.social {
+
 }
 
 .tel {
@@ -314,7 +551,8 @@ footer {
     color: #F0F0F0;
 }
 
-address.description{
+address.description {
+    margin-top: 30px;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
