@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: "Rubik", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     color: #000;
     background-color: #FFF;
@@ -547,8 +547,23 @@ span.comp {
     font-style: normal;
 }
 
-.tel.white{
+.tel.white {
     color: #F0F0F0;
+}
+
+.academy-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    min-height: 116px;
+    padding: 0;
+    margin-top: 140px;
+    margin-left: 150px;
+}
+
+.academy-logo {
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 address.description {
@@ -561,10 +576,25 @@ address.description {
     color: #F0F0F0;
 }
 
+.page-header-catalog {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 1440px;
+    min-height: 650px;
+    background-color:#FFFFFF;
+}
+
+.inner-header {
+    width: 1079px;
+    min-height: 85px;
+    display: block;
+    margin-left: 200px;
+    padding-left: 0;
+}
+
 .inner {
     display: flex;
     margin: 0 auto;
-    flex-direction: row;
     width: 1440px;
     min-height: 1428px;
     background-color: #F0F0F0;

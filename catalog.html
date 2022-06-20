@@ -6,72 +6,79 @@
     <link rel="stylesheet" href="/ styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
+    <header class="page-header-catalog">
+      <div class="logo-box">
+        <img src="/images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
+      </div>
       <div class="header">
-        <section class="navigation">
-        <form class="search">
-          <img src="/images/header/search.svg" alt="лупа" width="16" height="16">
-          <input type="text" name="search" class="search" placeholder="Текст поиска">
-          <button type="submit" class="search-button">Найти</button>
-          </form>
-        </section>
-
-        <nav class="icons">
-          <ul class="navigation-user">
-            <li class="icons item-user">
-              <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
+        <nav class="icons-navigation">
+          <ul class="icons-navigation-user">
+            <li class="icons search">
+                <form class="icons search-general">
+                  <img src="/images/header/search.svg" alt="лупа" width="16" height="16" class="search-icon">
+                  <input type="text" name="search" class="search-text" placeholder="Текст поиска">
+                  <button type="submit" class="search-button">Найти</button>
+                  </form>
+            </li>
+            <li class="icons enter">
               <a href="#" class="navigation-link-enter">
+              <img src="/images/header/enter.svg" alt="вход-иконка" width="13" height="12">
                 <span class="icons visually-hidden">
                   Войти
                 </span>
               </a>
            </li>
+           <div class="compare-bin">
             <li class="icons item-user">
-              <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
               <a href="#" class="navigation-link-compare">
+                <img src="/images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
                 <span class="icons visually-hidden">
                 Сравнить
                 </span>
               </a>
             </li>
             <li class="icons item-user">
-              <span class="icons number">2</span>
-              <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
               <a href="#" class="navigation-link-bin">
+                <span class="icons number">2</span>
+                <img src="/images/header/bin.svg" alt="корзина" width="16" height="14">
                 <span class="icons visually-hidden">
-                Корзина
+                  Корзина
                 </span>
               </a>
             </li>
+           </div>
          </ul>
+        </nav>
 
           <ul class="navigation navigation-list">
-            <li class="navigation navigation-item">
+            <li class="navigation navigation-item-catalog">
               <a href="catalog.html" class="link catalog-main">
                каталог товаров
               </a>
             </li>
-            <li class="navigation navigation-item">
+            <div class="navigation-item">
+            <li class="navigation">
               <a href="#" class="link delivery-main">
                 доставка
               </a>
             </li>
-            <li class="navigation navigation-item">
+            <li class="navigation">
               <a href="#" class="link warranty-main">
                 гарантия
               </a>
             </li>
           </li>
-          <li class="navigation navigation-item">
-            <a href="#" class="link contacts-main">
-              контакты
-            </a>
-          </li>
+            <li class="navigation">
+              <a href="#" class="link contacts-main">
+                контакты
+              </a>
+            </li>
+            </div>
           </ul>
-          <span class="text-white-number-01">01</span>
-        </nav>
+          <div class="box-01">
+          <span class="text-white-number-01">01</span></div>
       </div>
+
         <header class="inner-header">
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
@@ -87,6 +94,7 @@
           </ul>
         </header>
       </header>
+
       <main class="inner">
         <section class="catalog-products">
           <div class="sort-population">
@@ -235,19 +243,29 @@
     </main>
 
     <footer class="page-footer">
-      <img src="/images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
-      <address class="description">Санкт-Петербург,набережная
+      <div class="logo-description">
+        <img src="/images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
+        <address class="description">Санкт-Петербург,набережная
                реки Карповки, 5, литера П
-      </address>
-      <a href="#" class="link delivery">доставка</a>
-      <a href="#" class="link warranty"> гарантия</a>
-      <a href="#contacts" class="link contacts">контакты</a>
-      <a class="tel white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      <a class="academy-logo" href="https://htmlacademy.ru/">
-        <img src="/images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
-        <img src="/images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
-        <img src="/images/footer/twit.svg" alt="твиттер" width="15" height="14.06">
-      <img src="/images/footer/academy logo.png" alt="Логотип Академии" width="114.9" height="32.9"></a>
+        </address>
+      </div>
+      <div class="footer-links">
+        <div class="footer-delivery">
+          <a href="#" class="link footer-box">доставка</a>
+          <a href="#" class="link footer-box"> гарантия</a>
+          <a href="#contacts" class="link footer-box">контакты</a>
+        </div>
+        <div class="social">
+          <img src="/images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
+          <img src="/images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
+          <img src="/images/footer/twit.svg" alt="твиттер" width="15" height="14.06">
+        </div>
+      </div>
+      <div class="academy-contacts">
+        <a class="tel white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="academy-logo" href="https://htmlacademy.ru/">
+        <img src="/images/footer/academy logo.png" alt="Логотип Академии" width="114.9" height="32.9"></a>
+      </div>
     </footer>
   </body>
 </html>
