@@ -113,6 +113,7 @@ header.page-header {
 
 .enter {
   display: flex;
+  justify-content: space-between;
   min-width: 231px;
   min-height: 30px;
   padding: 10px;
@@ -198,7 +199,7 @@ header.page-header {
     padding: 10px;
 }
 
-.description,
+.description-distance,
 .advantage {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -243,6 +244,31 @@ header.page-header {
 .vr {
     margin-left: calc(50% - 96.95px/2 + 0.48px);
     margin-top: calc(50% - 54.99px/2 + 0.49px);
+}
+
+.selfie {
+    margin-left: calc(50% - 85.87px/2 + 0.08px);
+    margin-top: calc(50% - 117px/2 + 21.5px);
+}
+
+.cameras {
+    margin-left: calc(50% - 71.02px/2 - 0.49px);
+    margin-top: calc(50% - 87px/2 - 0.5px);
+}
+
+.fitness-wristband {
+    margin-left: calc(50% - 107.31px/2 - 0.34px);
+    margin-top: calc(50% - 64.99px/2 - 0.64px);
+}
+
+.smart-watch {
+    margin-left: calc(50% - 56.01px/2 + 0px);
+    margin-top: calc(50% - 97.98px/2 - 0.01px);
+}
+
+.copter {
+    margin-left: calc(50% - 132.03px/2 + 0.01px);
+    margin-top: calc(50% - 69.01px/2 - 0.5px);
 }
 
 .content-description {
@@ -310,8 +336,12 @@ h1 {
     line-height: 50px
 }
 
-address.description {
-    font-size: 16px;
+.description {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 a.description {
@@ -450,14 +480,21 @@ p.description {
 }
 
 .comp {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
 }
 
-li.comp {
-    font-size: 18px;
+.comp.time {
+    font-size: 24px;
+    padding-top: 32px;
+}
+
+ul.time {
+    padding-left: 0;
 }
 
 span.comp {
@@ -533,10 +570,6 @@ span.comp {
     color: #FFF;
 }
 
-.social {
-
-}
-
 .tel {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -566,7 +599,7 @@ span.comp {
     margin-left: 50px;
 }
 
-address.description {
+.address-footer {
     margin-top: 30px;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -593,60 +626,147 @@ address.description {
 }
 
 .inner {
-    display: flex;
+    display: grid;
     margin: 0 auto;
     width: 1440px;
-    min-height: 1428px;
+    height: 1428px;
     background-color: #F0F0F0;
 }
 
-
-.catalog {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 840px;
-    background-color: #FFFFFF;
-}
-
-.sort-population {
-    display: flex;
+.inner-catalog {
+    display: grid;
+    width: 1160px;
+    height: 1428px;
     margin: 0 auto;
-    width: 840px;
+    padding: 0;
+    grid-template-columns: 320px 840px;
+    grid-template-rows: 70px 1370px;
+    grid-template-areas:
+    "filter catalog-products"
+    "filter box";
+}
+
+.catalog-products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+    "selfie-stick prof-stick"
+    "nowater-stick stick-follow";
+    width: 860px;
+    height: 1060px;
+    align-items: center;
+    justify-items: center;
+    grid-area: catalog;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "sort sort-popular sort-buttons";
+    width: 860px;
+    grid-area: catalog-products;
     background-color: #F0F0F0;
+    padding: 0;
+}
+
+.sort {
+    padding: 0;
+    width: 147px;
+    height: 19px;
+    grid-area: sort;
+    align-self: center;
+}
+
+.sort-popular {
+    width: 141px;
+    height: 30px;
+    grid-area: sort-popular;
+    align-self: center;
+}
+
+.sort-buttons {
+    grid-area: sort-buttons;
+    align-self: center;
+    justify-self: end;
 }
 
 .filter {
-    flex-direction: column;
-    width: 320px;
-    height: 1316px;
+    grid-area: filter;
+    padding-top: 5px;
 }
 
-.box-selfie {
-    display: flex;
-    justify-content: space-around;
-    width: 760px;
-    margin: 0 auto;
+.selfie-stick {
+    grid-area: selfie-stick;
 }
 
-.box-stick-foto {
-    display: flex;
-    justify-content: space-around;
-    width: 760px;
-    margin: 0 auto;
+.prof-stick {
+    grid-area: prof-stick;
+}
+
+.nowater-stick {
+    grid-area: nowater-stick;
+}
+
+.stick-follow {
+    grid-area: stick-follow;
 }
 
 .download-button {
     display: flex;
-    margin: 0 auto;
     justify-content: center;
-    width: 760px;
+    align-items: center;
+    grid-area: download-button;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 55px;
+    border: #F0F0F0 solid 7px;
+}
+
+.catalog-box {
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    min-height: 1330px;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    grid-area: box;
 }
 
 .pagination {
     display: flex;
-    margin: 0 auto;
-    width: 760px;
+    justify-content: space-between;
+    grid-area: pagination;
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 55px;
+    margin-bottom: 20px;
+    list-style-type: none;
 }
 
+.item-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.back {
+    width: 128px;
+    padding: 15px 0 15px 15px;
+}
+
+.forward {
+    width: 128px;
+    padding: 15px 0 15px 25px;
+}

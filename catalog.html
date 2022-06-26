@@ -24,8 +24,10 @@
               <a href="#" class="navigation-link-enter">
               <img src="./images/header/enter.svg" alt="вход-иконка" width="13" height="12">
                 <span class="icons visually-hidden">
-                  Войти
-                </span>
+                  Коля Петухов
+                </span></a>
+                <a href="#" class="icons">
+                <span class="visually-hidden">Выйти</span>
               </a>
            </li>
            <div class="compare-bin">
@@ -89,31 +91,20 @@
               <a class="description breadcrumbs" href="catalog.html">Каталог</a>
             </li>
             <li class="description breadcrumbs-detail">
-              <a class="description breadcrumbs-detail-mono">Моноподы для селфи</a>
+              <a class="description breadcrumbs-detail-mono">Монопо ды для селфи</a>
             </li>
           </ul>
         </header>
       </header>
 
-      <main class="inner">
-        <section class="catalog-products">
-          <div class="sort-population">
-            <h2 class="navigation sort">сортировка:</h2>
-            <select name="sort">
-                <option value="popular">Популярные</option>
-            </select>
-              <button type="button"><img src="./images/catalog/up.svg" alt="стрелка вверх" width="11" height="10">
-              </button>
-              <button type="button"><img src="./images/catalog/down.svg" alt="стрелка вниз" width="11" height="10">
-              </button>
-          </div>
-        </section>
+    <main class="inner">
+      <div class="inner-catalog">
         <div class="filter">
           <h2 class="navigation filter">фильтр:</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-                <label for="price"><span class="comp">Стоимость</span>
-                  <input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
+                <legend class="comp">Стоимость</legend>
+                  <label for="price"></label><input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
                 </label>
             </fieldset>
             <fieldset class="catalog-filter-color">
@@ -165,87 +156,95 @@
                 </ul>
             </fieldset>
             <a href="#" class="atribute">показать</a>
-      </form>
-          </div>
-
-      <div class="catalog">
-      <section class="catalog products">
-        <ul class="catalog-products-list">
-          <div class="box-selfie">
-          <li class="catalog-products-item">
-            <img src="./images/catalog/selfie-stick.jpg" alt="Палка для селфи" width="360" height="380">
-            <h3 class="comp">Любительская
-                селфи-палка
-            </h3>
-            <span>500 р</span>
-          </li>
-          <li class="catalog-products-item">
-            <img src="./images/catalog/stick-pro-foto.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-            <h3 class="comp">Профессиональная
-                  селфи-палка
-            </h3>
-            <span>1 500 р</span>
-          </li>
-          </div>
-          <div class="box-stick-foto">
-          <li class="catalog-products-item">
-            <img src="./images/catalog/water-r-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <h3 class="comp">Непотопляемая
-                селфи-палка
-            </h3>
-            <span>2 500 р</span>
-          </li>
-          <li class="catalog-products-item">
-            <img src="./images/catalog/hand-foto.jpg" alt="Палка следуй за мной" width="360" height="380">
-            <h3 class="comp">Селфи-палка "Следуй за мной"
-            </h3>
-            <span>1 500 р</span>
-          </li>
-          </div>
-        </ul>
-        <div class="download-button">
-        <button type="button" class="button">загрузить ещё</button>
+          </form>
         </div>
-      </section>
 
-      <section class="pagination">
-        <div class="pagination">
+        <section class="catalog-products">
+            <h2 class="navigation sort">сортировка:</h2>
+            <select name="sort" class="sort-popular">
+                <option value="popular">Популярные</option>
+            </select>
+            <div class="sort-buttons">
+              <button type="button"><img src="./images/catalog/up.svg" alt="стрелка вверх" width="11" height="10">
+              </button>
+              <button type="button"><img src="./images/catalog/down.svg" alt="стрелка вниз" width="11" height="10">
+              </button>
+            </div>
+        </section>
+        <div class="catalog-box">
+            <ul class="catalog-products-list">
+                <li class="selfie-stick">
+                  <img src="./images/catalog/selfie-stick.jpg" alt="Палка для селфи" width="360" height="380">
+                  <h3 class="comp">Любительская
+                    селфи-палка
+                  </h3>
+                  <span>500 р</span>
+                </li>
+                <li class="prof-stick">
+                  <img src="./images/catalog/stick-pro-foto.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                  <h3 class="comp">Профессиональная
+                    селфи-палка
+                  </h3>
+                  <span>1 500 р</span>
+                </li>
+                <li class="nowater-stick">
+                  <img src="./images/catalog/water-r-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                  <h3 class="comp">Непотопляемая
+                    селфи-палка
+                  </h3>
+                  <span>2 500 р</span>
+                </li>
+                <li class="stick-follow">
+                  <img src="./images/catalog/hand-foto.jpg" alt="Палка следуй за мной" width="360" height="380">
+                  <h3 class="comp">Селфи-палка "Следуй за мной"
+                  </h3>
+                  <span>1 500 р</span>
+                </li>
+            </ul>
+          <div class="download-button">
+            <button type="button" class="button">загрузить ещё</button>
+          </div>
           <ul class="pagination">
-            <li class="pagination-item">
-               <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">назад</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">вперед</span>
-              </a>
-            </li>
+            <div class="back">
+              <li class="pagination-item-back">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="back">назад</span>
+                </a>
+              </li>
+            </div>
+            <div class="item-pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </div>
+            <div class="forward">
+              <li class="pagination-item-forward">
+                <a class="pagination-link pagination-next" href="#">
+                <span class="forward">вперед</span>
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
-      </section>
       </div>
     </main>
 
     <footer class="page-footer">
       <div class="logo-description">
         <img src="./images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
-        <address class="description">Санкт-Петербург,набережная
+        <address class="address-footer">Санкт-Петербург,набережная
                реки Карповки, 5, литера П
         </address>
       </div>
