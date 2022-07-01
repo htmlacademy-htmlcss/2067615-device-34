@@ -15,10 +15,9 @@
             <ul class="icons-navigation-user">
               <li class="icons search">
                   <form class="icons search-general">
-                    <img src="./images/header/search.svg" alt="лупа" width="16" height="16" class="search-icon">
                     <input type="text" name="search" class="search-text" placeholder="Текст поиска">
                     <button type="submit" class="search-button">Найти</button>
-                    </form>
+                  </form>
               </li>
               <li class="icons enter">
                 <a href="#" class="navigation-link-enter">
@@ -90,15 +89,20 @@
            </p>
          </section>
          <div class="more">
+        <div class="rectangle"></div>
         <button type="button" class="button-main">подробнее</button>
         </div>
         <div class="details">
+          <div class="far">
           <dl class="description-800m">
             <dt>800 м</dt>
           <dd class="description-distance">Дальность полета</dd>
+          </div>
+          <div class="radius">
           <dl class="advantage-50m">
             <dt>50 м</dt>
           <dd class="advantage">Радиус поражения</dd>
+          </div>
         </div>
       </div>
       </header>
@@ -180,9 +184,12 @@
                 доставка
               </li>
               <li class="item warranty">гарантия</li>
+              <div class="rectangle-warranty"></div>
               <li class="item credit">кредит</li>
+              <div class="rectangle-credit"></div>
             </ul>
-            <div class="delivery">
+            <div class="rectangle-list"></div>
+            <div class="delivery-box">
               <h1 class="delivery-head">Доставка</h1>
               <p class="description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно беспатно!
                 Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -199,9 +206,10 @@
            width="47" height="31">
         </section>
         <p class="only delivery-only-text">доставим редкий товар под заказ</p>
-        <button type="button" class="button">
+        <a href="#" class="delivery-only-link" width="125px" height="100px">
           <img src="./images/main/point.svg" class="delivery-only-icon" alt="перевернутый знак"
-          width="2" height="12"></button>
+          width="2" height="8">
+        <div class="circle"></div></a>
       </div>
 
       <div class="about-contacts">
@@ -215,7 +223,8 @@
           <li class="comp">СДИК</li>
           <li class="comp">ТоксБерри</li>
         </ol>
-        <a href="#" class="link">подробнее о нас</a>
+        <a href="#" class="link about-link">подробнее о нас</a>
+        <div class="rectangle-about"></div>
       </section>
 
       <section class="contacts" id="contacts">
@@ -231,7 +240,8 @@
           <li class="description">пн-пт: с 10:00 до 22:00</li>
           <li class="description">сб-вс: с 10:00 до 19:00</li>
         </ul>
-        <a href="#" class="link">напишите нам</a>
+        <a href="#" class="link write-link">напишите нам</a>
+        <div class="rectangle-write"></div>
       </section>
       </div>
 
@@ -244,10 +254,11 @@
         </div>
         <form class="email" action="https://echo.htmlacademy.ru/" method="post">
           <label class="email">
-            <input type="email" name="email-date" placeholder="Ваш e-mail">
+            <input type="email" class="email-date" name="email-date" placeholder="Ваш e-mail">
           </label>
-          <button type="button" class="button">подписаться</button>
-          <img src="./images/main/green mark.svg" alt="галочка" width="14" height="14">
+          <button type="button" class="button-email">подписаться</button>
+          <div class="rectangle-email"></div>
+          <img src="./images/main/green mark.svg" alt="галочка" class="free" width="14" height="14">
           <span class="description">Это бесплатно</span>
         </form>
       </section>
