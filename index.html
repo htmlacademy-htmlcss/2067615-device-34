@@ -7,43 +7,65 @@
   </head>
   <body>
       <header class="page-header">
-        <div class="logo-box">
+        <a href="#"><div class="logo-box">
           <img src="./images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
-        </div>
+        </div></a>
         <div class="header">
           <nav class="icons-navigation">
             <ul class="icons-navigation-user">
               <li class="icons search">
                   <form class="icons search-general">
-                    <input type="text" name="search" class="search-text" placeholder="Текст поиска">
+                    <input type="search" name="search" class="search-text" placeholder="Текст поиска">
                     <button type="submit" class="search-button">Найти</button>
                   </form>
               </li>
               <li class="icons enter">
                 <a href="#" class="navigation-link-enter">
-                <img src="./images/header/enter.svg" alt="вход-иконка" width="13" height="12">
-                  <span class="icons visually-hidden">
+                <img src="./images/header/enter.svg" alt="вход-иконка" width="13" height="12" class="enter-text">
+                  <span class="icons enter-text">
                     Войти
                   </span>
                 </a>
              </li>
-             <div class="compare-bin">
+            <div class="compare-bin">
               <li class="icons item-user">
                 <a href="#" class="navigation-link-compare">
-                  <img src="./images/header/compare.svg" alt="сравнение-иконка" width="10" height="12">
-                  <span class="icons visually-hidden">
+                  <img src="./images/header/compare.svg" alt="сравнение-иконка" width="10" height="12" class="compare">
+                  <span class="icons compare">
                   Сравнить
                   </span>
                 </a>
               </li>
               <li class="icons item-user">
                 <a href="#" class="navigation-link-bin">
+                  <div class="rectangle-white"></div>
                   <span class="icons number">2</span>
-                  <img src="./images/header/bin.svg" alt="корзина" width="16" height="14">
-                  <span class="icons visually-hidden">
+                  <img src="./images/header/bin.svg" alt="корзина" width="16" height="14" class="bin">
+                  <span class="icons bin">
                     Корзина
                   </span>
                 </a>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <div class="popover-cart-1">
+                      <img src="/images/catalog/selfie-stick.jpg" width="39px" height="43px" class="popover-img-1">
+                      <p class="popover-title-1">Любительская <br> селфи-палка</p>
+                      <button type="button" class="close-button-1"><img src="images/header/close-button.svg" width="10px" height="10px"></button>
+                    </div>
+                    <div class="popover-cart-2">
+                      <img src="/images/catalog/stick-pro-foto.jpg" width="39px" height="43px" class="popover-img-2">
+                      <p class="popover-title-2">Профессиональная <br> селфи-палка</p>
+                      <button type="button" class="close-button-1"><img src="images/header/close-button.svg" width="10px" height="10px"></button>
+                    </div>
+                    <div class="popover-cart-3">
+                      <span>Товаров: 2</span>
+                      <span>Сумма: 2000 Р</span>
+                    </div>
+                    <div class="popover-link">
+                      <a class="open-bin" href="#">открыть корзину</a>
+                    </div>
+                  </div>
+                </div>
               </li>
              </div>
            </ul>
@@ -51,9 +73,26 @@
 
             <ul class="navigation navigation-list">
               <li class="navigation navigation-item-catalog">
-                <a href="catalog.html" class="link catalog-main">
-                 каталог товаров
-                </a>
+                <div class="catalog-box-header">
+                  <a href="catalog.html" class="link catalog-main">
+                  каталог товаров
+                  </a>
+                  <button type="button" class="navigation-button"><img src="/images/header/plus.svg" width="16px" height=""></button>
+                  <div class="dropdown-menu">
+                    <div class="menu menu-1">
+                      <a href="#" class="menu-vr">Виртуальная реальность</a>
+                      <a href="#" class="menu-selfie">Моноподы для селфи</a>
+                      <a href="#" class="menu-cameras">Экшн-камеры</a>
+                    </div>
+                    <div class="menu menu-2">
+                      <a href="#" class="menu-wrist">Фитнес-браслеты</a>
+                      <a href="#" class="menu-watch">Умные часы</a>
+                    </div>
+                    <div class="menu menu-3">
+                      <a href="#" class="menu-copt">Квадрокоптеры</a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <div class="navigation-item">
               <li class="navigation">
@@ -72,8 +111,9 @@
                   контакты
                 </a>
               </li>
-              </div>
+            </div>
             </ul>
+
             <div class="box-01">
             <span class="text-white-number-01">01</span></div>
         </div>
@@ -223,8 +263,10 @@
           <li class="comp">СДИК</li>
           <li class="comp">ТоксБерри</li>
         </ol>
-        <a href="#" class="link about-link">подробнее о нас</a>
-        <div class="rectangle-about"></div>
+        <div class="about-link-box">
+          <a href="#" class="link about-link">подробнее о нас</a>
+          <div class="rectangle-about"></div>
+        </div>
       </section>
 
       <section class="contacts" id="contacts">
@@ -240,8 +282,10 @@
           <li class="description">пн-пт: с 10:00 до 22:00</li>
           <li class="description">сб-вс: с 10:00 до 19:00</li>
         </ul>
-        <a href="#" class="link write-link">напишите нам</a>
-        <div class="rectangle-write"></div>
+        <div class="write-link-box">
+          <a href="#" class="link write-link">напишите нам</a>
+          <div class="rectangle-write"></div>
+        </div>
       </section>
       </div>
 
@@ -266,7 +310,7 @@
 
     <footer class="page-footer">
       <div class="logo-description">
-        <img src="./images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
+        <img src="./images/footer/logo_footer.svg" class="footer logo-footer" alt="Логотип Девайс" width="144.9" height="36">
         <address class="address-footer">Санкт-Петербург,набережная
                реки Карповки, 5, литера П
         </address>
@@ -278,9 +322,9 @@
           <a href="#contacts" class="link footer-box">контакты</a>
         </div>
         <div class="social">
-          <img src="./images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
-          <img src="./images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
-          <img src="./images/footer/twit.svg" alt="твиттер" width="15" height="14.06">
+          <a href="#"><div class="rectangle-tg rectangle-social"></div></a>
+          <a href="#"><div class="rectangle-youtube rectangle-social"></div></a>
+          <a href="#"><div class="rectangle-twit rectangle-social"></div></a>
         </div>
       </div>
       <div class="academy-contacts">
@@ -289,5 +333,49 @@
         <img src="./images/footer/academy logo.png" alt="Логотип Академии" width="114.9" height="32.9"></a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="auth-form-user-options">
+          <h2 class="modal-title-main">Доставка под заказ</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post" class="auth-form">
+            <div class="field-name-email">
+              <p class="field-group">
+                <legend class="modal-title" for="auth-name">Ваше имя:</legend>
+                <input class="auth-form-field person" type="text" id="auth-name" name="auth-name"
+                  placeholder="Введите имя">
+              </p>
+              <p class="field-group">
+                <legend class="modal-title" for="auth-email">Ваш e-mail:</legend>
+                <input class="auth-form-field mail" type="text" id="auth-email" name="auth-email"
+                  placeholder="Почта">
+              </p>
+            </div>
+            <div class="field-delivery-quality">
+              <p class="field-group">
+                <legend class="modal-title" for="auth-delivery">Что нужно привезти:</legend>
+                <input class="auth-form-free" type="text" id="auth-delivery" name="auth-delivery"
+                  placeholder="В свободной форме">
+              </p>
+              <div class="field-group-box">
+                <p class="modal-title quality" for="auth-quality">Количество:</p>
+                <div class="field-group-quality">
+                  <button type="button" onclick="this.nextElementSibling.stepDown()" class="button-modal">-</button>
+                  <input class="auth-form-quality" type="number" id="auth-quality" name="auth-quality" value="1" min="1" max="20" step="1">
+                  <button type="button" onclick="this.previousElementSibling.stepUp()" class="button-modal">+</button>
+                  </div>
+              </div>
+            </div>
+            <div class="send-box">
+              <a href="#" class="send">отправить</a>
+              <div class="rectangle-send"></div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

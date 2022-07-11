@@ -10,12 +10,11 @@
       <div class="logo-box">
         <img src="./images/header/logo.svg" class="logo" alt="Логотип Девайс" width="145" height="36">
       </div>
-      <div class="header">
+      <div class="catalog-header">
         <nav class="icons-navigation">
           <ul class="icons-navigation-user">
             <li class="icons search">
                 <form class="icons search-general">
-                  <img src="./images/header/search.svg" alt="лупа" width="16" height="16" class="search-icon">
                   <input type="text" name="search" class="search-text" placeholder="Текст поиска">
                   <button type="submit" class="search-button">Найти</button>
                   </form>
@@ -77,8 +76,6 @@
             </li>
             </div>
           </ul>
-          <div class="box-01">
-          <span class="text-white-number-01">01</span></div>
       </div>
 
         <header class="inner-header">
@@ -87,11 +84,17 @@
             <li class="description">
               <a class="description breadcrumbs-link" href="index.html">Главная</a>
             </li>
+            <li class="breadcrumbs-img">
+              <img src="/images/catalog/breadcrumbs.svg" width="4px" height="7px" class="crumbs">
+            </li>
             <li class="description breadcrumbs-item">
-              <a class="description breadcrumbs" href="catalog.html">Каталог</a>
+              <a class="description breadcrumbs-catalog" href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs-img">
+              <img src="/images/catalog/breadcrumbs.svg" width="4px" height="7px" class="crumbs">
             </li>
             <li class="description breadcrumbs-detail">
-              <a class="description breadcrumbs-detail-mono">Монопо ды для селфи</a>
+              <a class="description breadcrumbs-detail-mono">Моноподы для селфи</a>
             </li>
           </ul>
         </header>
@@ -102,11 +105,13 @@
         <div class="filter">
           <h2 class="navigation filter">фильтр:</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="black-line"></div>
             <fieldset class="catalog-filter-group">
                 <legend class="comp">Стоимость</legend>
-                  <label for="price"></label><input type="range" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
-                </label>
+                  <label for="price"></label>
+                  <input type="range" class="scrollbar" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
             </fieldset>
+               <div class="black-line"></div>
             <fieldset class="catalog-filter-color">
               <legend class="comp catalog-filter-price">Цвет</legend>
               <ul class="catalog-filter-color-list">
@@ -137,25 +142,28 @@
                 </li>
               </ul>
             </fieldset>
-
+            <div class="black-line"></div>
             <fieldset class="catalog-filter-bluetooth">
               <legend class="comp catalog-filter-bluetooth">Bluetooth</legend>
                 <ul class="catalpg-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="description-color control-input" type="radio" name="bluetooth-group" value="yes" checked>
+                      <input class="description-color control-input bluetooth" type="radio" name="bluetooth-group" value="yes" checked>
                         Есть
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="description-color control-input" type="radio" name="bluetooth-group" value="yes">
+                      <input class="description-color control-input bluetooth" type="radio" name="bluetooth-group" value="yes">
                         нет
                     </label>
                   </li>
                 </ul>
             </fieldset>
-            <a href="#" class="atribute">показать</a>
+            <div class="button-show-box">
+              <button type="button" class="button-show">показать</button>
+              <div class="rectangle-show"></div>
+            </div>
           </form>
         </div>
 
@@ -165,9 +173,9 @@
                 <option value="popular">Популярные</option>
             </select>
             <div class="sort-buttons">
-              <button type="button"><img src="./images/catalog/up.svg" alt="стрелка вверх" width="11" height="10">
+              <button type="button" class="button-direct"><img src="./images/catalog/up.svg" alt="стрелка вверх" width="11" height="10">
               </button>
-              <button type="button"><img src="./images/catalog/down.svg" alt="стрелка вниз" width="11" height="10">
+              <button type="button" class="button-direct"><img src="./images/catalog/down.svg" alt="стрелка вниз" width="11" height="10">
               </button>
             </div>
         </section>
@@ -202,7 +210,7 @@
                 </li>
             </ul>
           <div class="download-button">
-            <button type="button" class="button">загрузить ещё</button>
+            <button type="button" class="button-download">загрузить ещё</button>
           </div>
           <ul class="pagination">
             <div class="back">
@@ -243,7 +251,7 @@
 
     <footer class="page-footer">
       <div class="logo-description">
-        <img src="./images/header/logo.svg" class="footer logo" alt="Логотип Девайс" width="144.9" height="36">
+        <img src="./images/footer/logo_footer.svg" class="footer logo-footer" alt="Логотип Девайс" width="144.9" height="36">
         <address class="address-footer">Санкт-Петербург,набережная
                реки Карповки, 5, литера П
         </address>
@@ -255,9 +263,9 @@
           <a href="#contacts" class="link footer-box">контакты</a>
         </div>
         <div class="social">
-          <img src="./images/footer/tg.svg" alt="телеграм" width="13.34" height="11.19">
-          <img src="./images/footer/youtube.svg" alt="ютуб" width="16" height="10.67">
-          <img src="./images/footer/twit.svg" alt="твиттер" width="15" height="14.06">
+          <a href="#"><div class="rectangle-tg rectangle-social"></div></a>
+          <a href="#"><div class="rectangle-youtube rectangle-social"></div></a>
+          <a href="#"><div class="rectangle-twit rectangle-social"></div></a>
         </div>
       </div>
       <div class="academy-contacts">
