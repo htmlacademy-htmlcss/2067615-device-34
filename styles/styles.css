@@ -379,6 +379,7 @@ header.page-header {
 .catalog-main {
     position: relative;
 }
+
 .dropdown-menu {
     display: flex;
     width: 1160px;
@@ -487,6 +488,55 @@ header.page-header {
     margin-left: 120px;
 }
 
+.quadcopt-img {
+    width: 100%;
+}
+
+.slider {
+    border: none;
+    background: transparent;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom:0;
+    cursor: pointer;
+    height: 70px;
+    width: 40px;
+}
+
+.button-slider-1 {
+    margin-left: 20px;
+}
+
+.button-slider-1:hover {
+    opacity: 0.6;
+}
+
+.button-slider-1:active {
+    opacity: 0.3;
+}
+
+.button-slider-1:focus {
+    box-shadow: inset 0 0 0 2px #AF4FFF;
+}
+
+.button-slider-2 {
+    transform: scale(-1,-1);
+    margin-left: -30px;
+}
+
+.button-slider-2:hover {
+    opacity: 0.6;
+}
+
+.button-slider-2:active {
+    opacity: 0.3;
+}
+
+.button-slider-2:focus {
+    box-shadow: inset 0 0 0 2px #AF4FFF;
+}
+
 .description-box {
     display: flex;
     flex-direction: column;
@@ -521,6 +571,64 @@ header.page-header {
 
 .more:disabled {
     opacity: 50%;
+}
+
+.pointer-slider {
+    display: flex;
+    justify-content: space-between;
+    width: 76px;
+    margin-left: 480px;
+    margin-top: -40px;
+    flex-wrap: wrap;
+}
+
+.pointer {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.pointer-1 {
+    background-color: #000;
+}
+
+.pointer-1:hover {
+    opacity: 0.7;
+}
+
+.pointer-1:active {
+    opacity: 0.3;
+}
+
+.pointer-1:focus {
+    box-shadow: inset 0 0 0 2px #AF4FFF;
+}
+
+.pointer-2:hover {
+  opacity: 0.7;
+}
+
+.pointer-2:active {
+  opacity: 0.3;
+}
+
+.pointer-2:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+}
+
+.pointer-3:hover {
+  opacity: 0.7;
+}
+
+.pointer-3.active {
+  opacity: 0.3;
+}
+
+.pointer-3:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
 }
 
 .details {
@@ -1470,6 +1578,81 @@ span.comp {
 .catalog-filter-group,
 .catalog-filter-bluetooth {
     border: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 200px;
+    height: 95px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+input[type="range"]{
+    appearance: none;
+    width:100%;
+    outline: none;
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    background: transparent;
+    pointer-events: none;
+}
+
+.slider-track {
+    width: 100%;
+    height: 5px;
+    background-color: #DCDCDC;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom:0;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #EBEBEB;
+    border: 2px solid #000;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: -5px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    pointer-events: auto;
+    background-color: #000;
+}
+
+.values {
+    display: flex;
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    opacity: 0.3;
+    position: relative;
+}
+
+.slider-2 {
+    padding-left: 100px;
+}
+
+.range2 {
+    padding-left: 70px;
 }
 
 .catalog-filter {
