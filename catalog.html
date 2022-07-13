@@ -106,11 +106,18 @@
           <h2 class="navigation filter">фильтр:</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="black-line"></div>
-            <fieldset class="catalog-filter-group">
-                <legend class="comp">Стоимость</legend>
-                  <label for="price"></label>
-                  <input type="range" class="scrollbar" id="price" min="0" max="5000" step="1" value="50" placeholder="от 0 до 5000">
-            </fieldset>
+            <div class="wrapper">
+              <span class="title-wrspper comp">Стоимость</span>
+              <div class="container">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="5000" value="1" id="slider-1" class="slider-1">
+                <input type="range" min="0" max="5000" value="5" id="slider-2" class="slider-2">
+              </div>
+              <div class="values">
+                <span id="range1" class="range1">от 0</span>
+                <span id="range2" class="range2">до 5000</span>
+              </div>
+            </div>
                <div class="black-line"></div>
             <fieldset class="catalog-filter-color">
               <legend class="comp catalog-filter-price">Цвет</legend>
